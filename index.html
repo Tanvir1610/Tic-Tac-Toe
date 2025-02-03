@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    <br><br>
-    <div id="player-names">
-        <label>Player 1:  <input type="text" id="player1-name" placeholder="Enter name" class="animated-input" /></label>
-        <br>
-        <label>Player 2:  <input type="text" id="player2-name" placeholder="Enter name" class="animated-input" /></label>
-        <br>
-        <button id="start-game" class="animated-button">Start Game</button>
+  <h1>Tic-Tac-Toe</h1>
+  <div id="player-names">
+    <label>Player 1: <input type="text" id="player1-name" placeholder="Enter name" class="animated-input"></label>
+    <label>Player 2: <input type="text" id="player2-name" placeholder="Enter name" class="animated-input"></label>
+    <button id="start-game" class="animated-button">Start Game</button>
+  </div>
+  <main id="game-container" class="hidden">
+    <p id="turn-indicator"></p>
+    <div id="board">
+      <div class="square" data-index="0"></div>
+      <div class="square" data-index="1"></div>
+      <div class="square" data-index="2"></div>
+      <div class="square" data-index="3"></div>
+      <div class="square" data-index="4"></div>
+      <div class="square" data-index="5"></div>
+      <div class="square" data-index="6"></div>
+      <div class="square" data-index="7"></div>
+      <div class="square" data-index="8"></div>
     </div>
-    <main id="game-container">
-        <p id="turn-indicator"></p>
-        <div id="board" class="hidden">
-            <div class="square" data-index="0"></div>
-            <div class="square" data-index="1"></div>
-            <div class="square" data-index="2"></div>
-            <div class="square" data-index="3"></div>
-            <div class="square" data-index="4"></div>
-            <div class="square" data-index="5"></div>
-            <div class="square" data-index="6"></div>
-            <div class="square" data-index="7"></div>
-            <div class="square" data-index="8"></div>
-        </div>
-        <input type="button" id="restart-btn" value="Restart Game" class="animated-button hidden">
-    </main>
-    <script src="script.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2053642123284283"
-     crossorigin="anonymous"></script>
+    <button id="restart-btn" class="animated-button hidden">Restart Game</button>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
